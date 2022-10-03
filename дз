@@ -1,0 +1,26 @@
+x=parse(Float64,readline())
+y=parse(Float64,readline())
+if (y<=0.5*x+1 || y<=0.5*x) && x<=2 && x>=-2 && y>=0
+  print("Принадлежит заданной плоскости")
+else
+  print("нет")
+end
+
+
+
+a=readline()
+global pros=1
+for i in a
+  global pros*=parse(Int64,i)
+end
+print(pros)
+
+
+global b=parse(Int64,readline())
+global pros=1
+while b>0
+    global b
+    global pros*=b%10
+    b=b÷10
+end
+print(pros)
